@@ -7,5 +7,6 @@ defined('ABSPATH') or die('This can be used only as a WordPress plugin.');
 
 require_once('archives.php');
 require_once('gallery.php');
+require_once('misc.php');
 
 ?>

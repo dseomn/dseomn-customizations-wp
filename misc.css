@@ -1,0 +1,18 @@
+/* Theme overrides. */
+
+.title-area {
+  text-shadow: #1f1f1f 0px 0px 0.2rem;
+}
+
+.footer-creds {
+  display: none;
+}
+
+
+/* Make owner/author comments differentiable from other comments. */
+
+.comment-list .comment-author-dseomn > article,
+.comment-list .bypostauthor > article {
+  padding-top: 0.5rem;
+  border-top: 0.5rem solid #cf0f0f;
+}
