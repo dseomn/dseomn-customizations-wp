@@ -1,0 +1,46 @@
+.gallery {
+  clear: both;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  overflow: visible;
+  margin-bottom: 24px;
+}
+
+.gallery .gallery-item {
+  margin: 0rem;
+  border: none;
+  padding: 0.2rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.gallery .gallery-item:hover,
+.gallery .gallery-item:focus {
+  background-color: #fff;
+  transform: scale(1.1);
+}
+
+.gallery .gallery-icon {
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.gallery img {
+  display: block;
+  border: none;
+  padding: 0rem;
+  max-height: 180px;
+}
+
+.gallery img:hover,
+.gallery img:focus {
+  border: none;
+}
+
+.gallery-caption {
+  display: none;
+}
