@@ -1,5 +1,9 @@
 /* Theme overrides. */
 
+.site-header {
+  background-color: #7592be;
+}
+
 .title-area {
   text-shadow: #1f1f1f 0px 0px 0.2rem;
 }
