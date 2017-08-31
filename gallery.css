@@ -33,7 +33,12 @@
   display: block;
   border: none;
   padding: 0rem;
+  height: auto;
+  width: auto;
   max-height: 180px;
+  max-width: 100%;
+  min-height: 0;
+  min-width: 0;
 }
 
 .gallery img:hover,

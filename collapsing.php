@@ -14,7 +14,13 @@ function dseomn_register_collapsing_scripts() {
   wp_register_script(
     'dseomn-collapsing',
     plugins_url('dseomn-customizations-wp/collapsing.js'),
-    array('jquery'),
+    array(
+      'jquery',
+
+      // This dependency ensures that images are layed out correctly before we
+      // try to calculate the height of a post.
+      'dseomn-gallery',
+      ),
     false,
     true);
   wp_enqueue_script('dseomn-collapsing');

@@ -16,12 +16,20 @@ function dseomn_modify_gallery_atts($out, $pairs, $atts, $shortcode) {
 }
 add_filter('shortcode_atts_gallery', 'dseomn_modify_gallery_atts', 10, 4);
 
-function dseomn_register_gallery_styles() {
+function dseomn_register_gallery_scripts() {
   wp_register_style(
     'dseomn-gallery',
     plugins_url('dseomn-customizations-wp/gallery.css'));
   wp_enqueue_style('dseomn-gallery');
+
+  wp_register_script(
+    'dseomn-gallery',
+    plugins_url('dseomn-customizations-wp/gallery.js'),
+    array('jquery'),
+    false,
+    true);
+  wp_enqueue_script('dseomn-gallery');
 }
-add_action('wp_enqueue_scripts', 'dseomn_register_gallery_styles');
+add_action('wp_enqueue_scripts', 'dseomn_register_gallery_scripts');
 
 ?>
