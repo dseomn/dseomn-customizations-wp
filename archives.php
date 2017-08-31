@@ -20,11 +20,11 @@ class Dseomn_Archives extends WP_Widget {
     echo '<ul class="dseomn-archives">';
     wp_get_archives(
       array(
-        type => 'yearly',
-        format => 'custom',
-        before => '<li class="dseomn-archives-item">',
-        after => '</li>',
-        show_post_count => true,
+        'type' => 'yearly',
+        'format' => 'custom',
+        'before' => '<li class="dseomn-archives-item">',
+        'after' => '</li>',
+        'show_post_count' => true,
         ));
     echo '</ul>';
 
