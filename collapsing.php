@@ -26,8 +26,7 @@ function dseomn_collapse_the_post() {
 
   echo
     '<input type="checkbox" class="dseomn-is-collapsed" ',
-    'id="dseomn-is-collapsed-', get_the_ID(), '" ',
-    'checked>';
+    'id="dseomn-is-collapsed-', get_the_ID(), '">';
 }
 add_action('the_post', 'dseomn_collapse_the_post');
 
