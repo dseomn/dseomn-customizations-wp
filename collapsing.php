@@ -14,7 +14,9 @@ function dseomn_register_collapsing_scripts() {
   wp_register_script(
     'dseomn-collapsing',
     plugins_url('dseomn-customizations-wp/collapsing.js'),
-    array('jquery'));
+    array('jquery'),
+    false,
+    true);
   wp_enqueue_script('dseomn-collapsing');
 }
 add_action('wp_enqueue_scripts', 'dseomn_register_collapsing_scripts');
@@ -26,8 +28,7 @@ function dseomn_collapse_the_post() {
 
   echo
     '<input type="checkbox" class="dseomn-is-collapsed" ',
-    'id="dseomn-is-collapsed-', get_the_ID(), '" ',
-    'checked>';
+    'id="dseomn-is-collapsed-', get_the_ID(), '">';
 }
 add_action('the_post', 'dseomn_collapse_the_post');
 
