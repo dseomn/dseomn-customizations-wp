@@ -14,7 +14,9 @@ function dseomn_register_collapsing_scripts() {
   wp_register_script(
     'dseomn-collapsing',
     plugins_url('dseomn-customizations-wp/collapsing.js'),
-    array('jquery'));
+    array('jquery'),
+    false,
+    true);
   wp_enqueue_script('dseomn-collapsing');
 }
 add_action('wp_enqueue_scripts', 'dseomn_register_collapsing_scripts');
