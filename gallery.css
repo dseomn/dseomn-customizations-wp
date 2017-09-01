@@ -12,12 +12,12 @@
   margin: 0rem;
   border: none;
   padding: 0.2rem;
+  background-color: #fff;
   transition: all 0.1s ease-in-out;
 }
 
 .gallery .gallery-item:hover,
 .gallery .gallery-item:focus {
-  background-color: #fff;
   transform: scale(1.1);
 }
 
