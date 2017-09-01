@@ -2,7 +2,13 @@
 defined('ABSPATH') or die('This can be used only as a WordPress plugin.');
 
 function dseomn_do_collapse() {
-  return !is_singular() && !is_feed();
+  return
+    !is_singular() &&
+    !is_feed() &&
+    !is_trackback() &&
+    !is_admin() &&
+    !is_network_admin() &&
+    true;
 }
 
 function dseomn_register_collapsing_scripts() {
