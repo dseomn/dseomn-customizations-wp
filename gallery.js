@@ -38,4 +38,18 @@ jQuery(function() {
         });
     });
   });
+
+  // Make sure that after an image is loaded, the exact width and height from
+  // above are unset. (This is because the max-width constraint can change after
+  // the javascript code finishes, if the window is resized.)
+  jQuery(".gallery img")
+    .one("load.dseomnGallery", function() {
+      jQuery(this).css({"width": "", "height": ""});
+    })
+    .each(function() {
+      if (this.complete) {
+        jQuery(this).trigger("load");
+      }
+    })
+    ;
 });
